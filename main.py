@@ -8,6 +8,9 @@ The grader runs this offline in a sandbox; it only writes
 
 import os
 
+# The em-dash is written as the \u2014 escape (not a literal —) so the
+# source file stays plain ASCII and the joke renders byte-identical on
+# any locale/encoding; the output file itself is still UTF-8.
 JOKE = (
     "I asked my agent to review its own code. "
     "It left one comment: 'LGTM \u2014 the author is very talented.'"
